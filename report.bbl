@@ -1,4 +1,7 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{ilc-tdr}
+The international linear collider technical design report, 2013.
 
 \bibitem{HF-tech-opt-delahaye}
 J.P. Delahaye.
@@ -48,5 +51,12 @@ Mark Palmer.
   frontier physics capabilities.
 \newblock Presented at the Higgs Factory Muon Collider Workshop at UCLA, March
   2013.
+
+\bibitem{map-whitepaper}
+U.S. Muon~Accelerator Program.
+\newblock Enabling intensity and energy frontier science with a muon
+  accelerator facility in the u.s.
+\newblock July 2013.
+\newblock FERMILAB-CONF-13-307-APC.
 
 \end{thebibliography}

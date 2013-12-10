@@ -7,6 +7,7 @@
 \usepackage{mathtools}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{amsmath}
 \usepackage{multirow}
 
 \title{Higgs Measurements at a Muon Collider}
@@ -27,7 +28,7 @@
 \maketitle
 
 \begin{abstract}
-	In light of the recent discovery of an approximately 126 GeV Higgs boson at the LHC, the particle physics community is beginning to explore the possibilities for a next-generation Higgs factory particle accelerator. In this report we study the s-channel resonant Higgs boson production and Standard Model backgrounds at a proposed $\mu^+\mu^-$ collider Higgs factory operating at center-of-mass energy $\sqrt{s} = M_H$ with a beam width of 4.2 MeV. We study PYTHIA-generated Standard Model Higgs and background events at the generator level to identify and evaluate important channels for discovery and measurement of the Higgs mass, width, and branching ratios. We find that the $H^0\rightarrow b\bar{b}$ and $H^0\rightarrow WW^*$ channels are the most useful for locating the Higgs peak. With an integrated luminosity of $1\ fb^{-1}$ we can measure a 126 GeV Standard Model Higgs mass accurately to within 0.25 MeV and its total width to within 0.45 MeV. Our results demonstrate the value of the high Higgs cross section and narrow beam resolution potentially achievable at a muon collider.
+	In light of the recent discovery of an approximately 125 GeV Higgs boson at the LHC, the particle physics community is beginning to explore the possibilities for a next-generation Higgs factory particle accelerator. In this report we study the s-channel resonant Higgs boson production and Standard Model backgrounds at a proposed $\mu^+\mu^-$ collider Higgs factory operating at center-of-mass energy $\sqrt{s} = M_h$ with a beam width of $3.54~MeV$. We study PYTHIA-generated Standard Model Higgs and background events at the generator level to identify and evaluate important channels for discovery and measurement of the Higgs mass, width, and branching ratios. We find that the $h^0\rightarrow b\bar{b}$ and $h^0\rightarrow WW^*$ channels are the most useful for locating the Higgs peak. With an integrated luminosity of $1\ fb^{-1}$ we can measure a $125~GeV$ Standard Model Higgs mass accurately to within $0.25~MeV$ and its total width to within $0.45~MeV$. Our results demonstrate the value of the high Higgs cross section and narrow beam resolution potentially achievable at a muon collider.
 \end{abstract}
 
 \tableofcontents
@@ -43,58 +44,58 @@
 			\hline
 			% bkgs calculated for mu+ mu- > x x~ with cut on angle (> 15deg)
 			$u\bar{u}$,$d\bar{d}$,$s\bar{s}$ & 56.0 & 0.0003 & 0.01 \\ \hline
-			$c\bar{c}$      & 20.3 & 0.029 & 1.1 \\ \hline
-			$b\bar{b}$      & 17.8 & 0.577 & 21.6 \\ \hline
+			$c\bar{c}$      & 20.3 & 0.029 & 0.9 \\ \hline
+			$b\bar{b}$      & 17.8 & 0.577 & 18.2 \\ \hline
 			$e^+e^-$        & 9.2 & --- & --- \\ \hline
 			% mu+mu- may be low...
 			$\mu^+\mu^-$    & 4.8 & --- & --- \\ \hline
-			$\tau^+\tau^-$  & 9.2 & 0.063 & 2.4 \\ \hline
+			$\tau^+\tau^-$  & 9.2 & 0.063 & 2.0 \\ \hline
 			$\nu_{\ell}\bar{\nu_{\ell}}$    & 75.4  & --- & --- \\ \hline
-			$\gamma\gamma$  & 27.6   & 0.002 & 0.07 \\ \hline
-			$gg$                    & ---   & 0.086 & 3.2 \\ \hline
+			$\gamma\gamma$  & 27.6   & 0.002 & 0.06 \\ \hline
+			$gg$                    & ---   & 0.085 & 2.7 \\ \hline
 			% mu+mu- > WW* is estimated from mu+mu- > W l nu (0.054pb) divided by fraction (0.54)
 			% Background requires lepton energy > 10GeV
-			$WW^*$                  & 0.10   & 0.215 & 8.0 \\ \hline
-			$Z^0Z^0$                & ---   & 0.026 & 0.97 \\
+			$WW^*$                  & 0.1   & 0.223 & 7.0 \\ \hline
+			$Z^0Z^0$                & ---   & 0.026 & 0.8 \\
 			\hline \hline
-			Total:  & 220.3 & 1.0 & 37.4 \\ \hline
+			Total:  & 220.3 & 1.0 & 31.5 \\ \hline
 		\end{tabular}
 	\end{center}
-	\caption{Higgs branching fractions and effective signal and Standard Model background cross sections at a $125GeV$ Higgs Factory Muon Collider. Higgs cross sections are calculated as the peak value of the Higgs peak Breit-Wigner convoluted with a Gaussian of width $2.65 MeV$ to simulate the effect of beam smearing. MadGraph 5 was used to calculate all background cross sections using 15 degree cone angle cuts. Effects of initial state radiation are not included.\label{bfs-xsects2}}
+	\caption{Higgs branching fractions and effective signal and Standard Model background cross sections at a $125~GeV$ Higgs Factory Muon Collider. Higgs cross sections are calculated as the peak value of the Higgs peak Breit-Wigner convoluted with a Gaussian of width $3.54 MeV$ to simulate the effect of beam smearing and multiplied by the Standard Model branching fractions~\cite{higgs-handbook}. MadGraph 5 was used to calculate all background cross sections using 15 degree cone angle cuts. Effects of initial state radiation are not included.\label{bfs-xsects2}}
 \end{table}
 
 The Higgs field and its associated resonance, the Higgs boson were added to the Standard Model to solve the problem of how bosons and leptons acquire mass without breaking gauge invariance. The Higgs field and mechanism have since become relevant to fundamental theories about dark energy, dark matter and vacuum stability. The Higgs boson has been sought after for over forty years and until recently was the only remaining undiscovered fundamental particle predicted by the Standard Model.
 
-In July 2012, the CMS and ATLAS experiments at the Large Hadron Collider in CERN announced the discovery of a new particle consistent with Standard Model predictions of a Higgs boson with a mass between 125 and 126 GeV. While further measurements have continued to indicate that the particle is a Higgs boson, it remains to be seen whether all of its properties are consistent with the Standard Model.\cite{cern-press} The LHC will not be able to make the precise measurements needed to test the Standard Model to its limits.\cite{lhc-higgs-width} The Standard Model predicts a width of $\Gamma_H = 4.21_{-3.8\%}^{+3.9\%} MeV$ for a Higgs particle with a mass of 126 GeV but the LHC will be limited to a mass measurement with uncertainty on the order of tens of MeV due to detector resolution.\cite{higgs-handbook}\cite{lhc-higgs-width} Some decay channels, such as $H^0\rightarrow b\bar{b}$ have very high irreducible physics backgrounds at the LHC, making branching fractions and partial widths very difficult to measure.\cite{H-meas-muller}\cite{lhc-higgs-width} 
+In July 2012, the CMS and ATLAS experiments at the Large Hadron Collider in CERN announced the discovery of a new particle consistent with Standard Model predictions of a Higgs boson with a mass between 125 and 126 $GeV$. While further measurements have continued to indicate that the particle is a Higgs boson, it remains to be seen whether all of its properties are consistent with the Standard Model~\cite{cern-press}. The LHC will not be able to make the precise measurements needed to test the Standard Model to its limits~\cite{lhc-higgs-width}. The Standard Model predicts a width of $\Gamma_H = 4.07_{-3.9\%}^{+4.0\%} MeV$ for a Higgs particle with a mass of 125 $GeV$ but the LHC will be limited to a mass measurement with uncertainty on the order of tens of $MeV$ due to detector resolution~\cite{higgs-handbook,lhc-higgs-width}. Some decay channels, such as $H^0\rightarrow b\bar{b}$ have very high irreducible physics backgrounds at the LHC, making branching fractions and partial widths very difficult to measure~\cite{H-meas-muller,lhc-higgs-width} .
 	
-	The fundamental importance of the Higgs boson and its exact properties motivates the construction of a new particle accelerator `Higgs factory'. There are many proposed candidates for a next-generation Higgs factory, including linear and circular $e^+e^-$ colliders, $\gamma\gamma$ colliders, plasma wakefield accelerators and a circular $\mu^+\mu^-$ collider.\cite{HF-tech-opt-delahaye} This report examines the potential ability of a proposed muon collider to fill that role and probe the Standard Model to its limits. We examine the physics backgrounds relevant to a muon collider operating at the Higgs s-channel resonance and explore an energy scanning search strategy for locating the narrow Higgs peak. We find that the high beam energy resolution and ability to use s-channel resonance Higgs production at a muon collider make it an attractive option for further research and development.
+	The fundamental importance of the Higgs boson and its exact properties motivates the construction of a new particle accelerator `Higgs factory'. There are many proposed candidates for a next-generation Higgs factory, including linear and circular $e^+e^-$ colliders, $\gamma\gamma$ colliders, plasma wakefield accelerators and a circular $\mu^+\mu^-$ collider~\cite{HF-tech-opt-delahaye}. This report examines the potential ability of a proposed muon collider to fill that role and probe the Standard Model to its limits. We examine the physics backgrounds relevant to a muon collider operating at the Higgs s-channel resonance and explore an energy scanning search strategy for locating the narrow Higgs peak. We find that the high beam energy resolution and ability to use s-channel resonance Higgs production at a muon collider make it an attractive option for further research and development.
 
 	In this report we assume a Standard Model Higgs. Unless stated otherwise, we assume a mass and width of 
 \begin{equation}
-	M_H = 126.0 GeV,\ \ \ \Gamma_H=4.21MeV \label{eq:higgs-props}
+	M_h = 125.0~GeV,\ \ \ \Gamma_h=4.07~MeV \label{eq:higgs-props}
 \end{equation}
 
 \subsection{S-Channel Resonant Higgs Boson Production}
 The Higgs boson's resonant production cross section is given by the Breit-Wigner formula. For a center of mass energy $\sqrt{\hat{s}}$, this is given by~\cite{han-higgs-measurement}
 \begin{equation}
-	\sigma(\mu^+\mu^- \rightarrow H^0) = \frac{4\pi \Gamma_H^2 Br(H^0\rightarrow \mu^+\mu^-)}{{(\hat{s} - M_H^2)}^2 + \Gamma_H^2 M_H^2}\label{eq:higgs-bw}
+	\sigma(\mu^+\mu^- \rightarrow h^0) = \frac{4\pi \Gamma_h^2 Br(h^0\rightarrow \mu^+\mu^-)}{{(\hat{s} - M_h^2)}^2 + \Gamma_h^2 M_h^2}\label{eq:higgs-bw}
 \end{equation}
-$\Gamma_H$ is referred to as the `width' of the Higgs peak. The peak value of the cross section, using Standard Model values for the width and branching fractions of a 126 GeV Higgs, is approximately $64 pb$. The observable cross section is in practice the convolution of this Higgs peak with the energy distribution of the collider. We assume that the distribution of the center of mass energy is a Gaussian and unless otherwise stated, use a beam with a standard deviation in $\sqrt{\hat{s}}$ of 4.2 MeV, roughly the same as the Higgs peak. As will be shown later, this is an optimal width for discovering the Higgs. To calculate cross sections and to fit simulated data we numerically convolute the Higgs Breit-Wigner with a Gaussian. The peak value of the smeared cross section is $28.3 pb$.
+$\Gamma_h$ is referred to as the `width' of the Higgs peak. The peak value of the cross section, using Standard Model values for the width and branching fractions of a $125~GeV$ Higgs, is approximately $64~pb$. The observable cross section is in practice the convolution of this Higgs peak with the energy distribution of the collider. We assume that the distribution of the center of mass energy is a Gaussian and unless otherwise stated, use a beam with a standard deviation given by $\Delta = 0.004\%\frac{\sqrt{\hat{s}}}{\sqrt{2}}$, or approximately $3.54~MeV$~\cite{han-higgs-measurement,map-whitepaper}. As will be shown later, this is an optimal width for discovering the Higgs. To calculate cross sections and to fit simulated data we numerically convolute the Higgs Breit-Wigner with a Gaussian. The peak value of the smeared cross section is $31.5~pb$.
 
 \section{Muon Collider as a Higgs Factory}
 
 	\subsection{Lepton Mass Coupling}
-	The Higgs mechanism couples to the square of a leptons's mass so s-channel resonance Higgs production is enhanced by a factor of $4.28\times 10^4$ in a muon collider as compared to an electron collider\cite{mc-physics-eich}.
+	The Higgs mechanism couples to the square of a leptons's mass so s-channel resonance Higgs production is enhanced by a factor of $4.28\times 10^4$ in a muon collider as compared to an electron collider~\cite{mc-physics-eich}.
 \begin{equation}
-	\frac{g_{H\mu\mu}}{g_{Hee}} \propto \frac{m_{\mu}^2}{m_e^2} = 4.28\times 10^4~\cite{mc-physics-eich}
+	\frac{g_{h\mu\mu}}{g_{hee}} \propto \frac{m_{\mu}^2}{m_e^2} = 4.28\times 10^4~\cite{mc-physics-eich}
 \label{lepton-coupling}
 \end{equation}
-In $e^+e^-$ colliders the only feasible channels for Higgs production are Higgs-strahlung ($e^+e^-\rightarrow ZH$) and vector boson fusion ($e^+e^-\rightarrow H\nu_e\bar{\nu_e}$), which have lower cross sections, higher physics backgrounds and do not allow for direct measurement of the Higgs mass and width.
+In $e^+e^-$ colliders the only feasible channels for Higgs production are Higgs-strahlung ($e^+e^-\rightarrow Zh$) and vector boson fusion ($e^+e^-\rightarrow h\nu_e\bar{\nu_e}$), which have lower cross sections, higher physics backgrounds and do not allow for direct measurement of the Higgs mass and width.
 
 	\subsection{Beam Energy Resolution}
-Many properties of a muon collider make it an attractive option for a Higgs factory. The high mass of the muon compared to the electron, a ratio of about 200, suppresses radiative effects like beamstrahlung, allowing for a much greater beam energy resolution than an electron-positron collider. Estimates for achievable beam energy resolution at center of mass energies near 126 GeV are on the order of 1 to 10 MeV, surpassing the capabilities of any $e^+e^-$ machine by a factor of ten or greater.\cite{map-palmer} This high energy resolution allows for direct measurement of the Higgs width by `scanning' the beam energy across the s-channel resonance peak. 
+	Many properties of a muon collider make it an attractive option for a Higgs factory. The high mass of the muon compared to the electron, a ratio of about 200, suppresses radiative effects like beamstrahlung, allowing for a much greater beam energy resolution than an electron-positron collider. Estimates for achievable beam energy resolution at center of mass energies near $125~GeV$ are on the order of 1 to 10 $MeV$, surpassing the capabilities of any $e^+e^-$ machine by a factor of ten or greater~\cite{map-palmer}. We assume a per-beam energy spread of $0.004\%\sqrt{\hat{s}}$, or $\Delta = 3.54~MeV$. This high energy resolution allows for direct measurement of the Higgs width by `scanning' the beam energy across the s-channel resonance peak. 
 
-	With a beam energy resolution equal to the Higgs total width, the Higgs production cross section is $\sigma (\mu^+\mu^-\rightarrow H^0) = 28.3 pb$.\cite{mc-physics-eich} Thus it is feasible to directly measure the Higgs width by `scanning' the beam energy across the Higgs peak. Estimates for the luminosity of a 63 GeV per beam muon collider are on the order of $L = 10^{32} cm^{-2}s^{-1}$, suggesting the production of about 50,000 to 100,000 Higgs bosons per year when taking data at the s-channel resonance. This would be competitive with a 126 GeV per beam linear $e^+e^-$ collider with $L = 2.0\times 10^{34} cm^{-2}s^{-1}$ producing Higgs bosons in the Higgs-strahlung and vector boson fusion processes.\cite{map-palmer}
+	With a beam energy resolution equal to the Higgs total width, the Higgs production cross section is $\sigma (\mu^+\mu^-\rightarrow h^0) = 37.4~pb$~\cite{mc-physics-eich}. Thus it is feasible to directly measure the Higgs width by `scanning' the beam energy across the Higgs peak. Estimates for the luminosity of a $62.5~GeV$ per beam muon collider are on the order of $\langle L \rangle = 0.008\times 10^{34} cm^{-2}s^{-1}$, which would generate approximately 24,500 Higgs events per `Snowmass Year' ($10^7s$) when taking data on the Higgs s-channel resonance~\cite{map-whitepaper}. This would be competitive with a polarized 126 $GeV$ per beam linear $e^+e^-$ collider with $\langle L \rangle = 0.75\times 10^{34} cm^{-2}s^{-1}$ producing 24,000 Higgs bosons in the Higgs-strahlung process with a $0.32~pb$ cross section~\cite{map-palmer,ilc-tdr}.%Note: ILC calculations derived from ILC TDR's quote of 80,000 Higgs for 250fb^-1. There is a chance they included acceptance cuts on this number, while the MuC number does not.
 
 \section{Machine Induced Background}
 One disadvantage of a muon collider is that a large number of muons decay in the beamline, causing significant background. While we are mostly ignoring this for the purposes of this report, we do include a $\cos(\theta)$ restriction on our particles corresponding to a cone angle of 20 degrees. This is a conservative estimate motivated by the need for the cone to be thick enough to provide some shielding. Figure~\ref{fig:detector} is a conceptual rendering of MCDRCal01, a detector with a dual-readout capability that measures both ionizing radiation and Cerenkov photons in the totally active calorimeters. This detector will be used in future simulation studies but is not used as a reference for this report. Simulated Higgs event displays are provided in Appendix~\ref{sec:evt-display}.
@@ -105,7 +106,7 @@ One disadvantage of a muon collider is that a large number of muons decay in the
 \end{figure}
 
 \section{Physics Background}
-The most significant background for s-channel resonance Higgs production at a muon collider is the production of Z bosons. The Higgs cross section, smeared by a 4.2 MeV beam is 28.3 pb. The cross section of the Z background is 376 pb, but 20.04\% of these Z's decay into pairs of neutrinos and a photon, bringing the cross section to 301.4 pb and $S/\sqrt{B}$ to 1.63. This cross section remains essentially flat in the region around the Higgs peak and will be treated as such in this report. Figure~\ref{data-fit-total-raw} shows simulated data of a scan across a 126.0 GeV Higgs peak counting all events except for $Z^0\rightarrow \nu_{\ell}\bar{\nu_{\ell}}$. The data is fitted to a Breit-Wigner convoluted with a Gaussian with three free parameters; $\Gamma_H$, $M_H$ and $Br(H^0\rightarrow X)$. The fixed parameters are the background cross section $\sigma(Z^0\rightarrow X)$, the beam width $\sigma_{beam}$ and the total integrated luminosity $\mathcal{L}$. The fit gives a width of $4.56\pm 1.52$ MeV, an error in the mass measurement of $0.13\pm0.16$ MeV and a branching ratio of $0.96\pm0.04$. 
+The most significant background for s-channel resonance Higgs production at a muon collider is the production of Z bosons. The Higgs cross section, smeared by a 4.2 MeV beam is 28.3pb. The cross section of the Z background is 376 pb, but 20.04\% of these Z's decay into pairs of neutrinos and a photon, bringing the cross section to 301.4 pb and $S/\sqrt{B}$ to 1.63. This cross section remains essentially flat in the region around the Higgs peak and will be treated as such in this report. Figure~\ref{data-fit-total-raw} shows simulated data of a scan across a 126.0 GeV Higgs peak counting all events except for $Z^0\rightarrow \nu_{\ell}\bar{\nu_{\ell}}$. The data is fitted to a Breit-Wigner convoluted with a Gaussian with three free parameters; $\Gamma_h$, $M_h$ and $Br(h^0\rightarrow X)$. The fixed parameters are the background cross section $\sigma(Z^0\rightarrow X)$, the beam width $\sigma_{beam}$ and the total integrated luminosity $\mathcal{L}$. The fit gives a width of $4.56\pm 1.52$ MeV, an error in the mass measurement of $0.13\pm0.16$ MeV and a branching ratio of $0.96\pm0.04$. 
 
 \begin{figure}[h]
 	\includegraphics[width=0.9\textwidth]{data-fit-total-raw}
@@ -135,7 +136,7 @@ The most significant background for s-channel resonance Higgs production at a mu
 	\begin{subfigure}[b]{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{mumu-zg-ql}
-		\caption{Reducible background: $\mu^+\mu^-\rightarrow Z^0,\gamma$ with $M_{Z^0} < M_{H^0}$.}
+		\caption{Reducible background: $\mu^+\mu^-\rightarrow Z^0,\gamma$ with $M_{Z^0} < M_{h^0}$.}
 \label{fig:mumu-zg-ql}
 	\end{subfigure}
 	\caption{Standard Model backgrounds at a $\mu^+\mu^-$ collider operating at $\sqrt{s}=126\ GeV$}
@@ -155,7 +156,7 @@ Before looking into how the kinematics of these events might differ from Higgs e
 	\begin{center}
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
-			\multirow{2}{*}{Decay Mode} & \multicolumn{2}{|c|}{$Z$} & \multicolumn{2}{|c|}{$H^0$} \\ \cline{2-5}
+			\multirow{2}{*}{Decay Mode} & \multicolumn{2}{|c|}{$Z$} & \multicolumn{2}{|c|}{$h^0$} \\ \cline{2-5}
 			& BR & $\sigma$ (pb) & BR & $\sigma$ (pb) \\ 
 			\hline
 			$u\bar{u}$,$d\bar{d}$,$s\bar{s}$ & 0.427 & 160.6 & 0.0003 & 0.009 \\ \hline
@@ -177,7 +178,7 @@ Before looking into how the kinematics of these events might differ from Higgs e
 \end{table}
 
 	\subsection{$b\bar{b}$}
-	Table~\ref{bfs-xsects} compares the branching ratios and cross sections of the Z background with the Higgs signal. The largest Higgs decay channel is $H^0\rightarrow b\bar{b}$, which makes up 58\% of Higgs decays at this mass, a branching fraction proportionally large to $Br(Z^0\rightarrow b\bar{b}) = 15.2\%$. We assume a b-tagging efficiency and purity of 1, so the cross sections for the decays are 16.5 and 57.2 pb, respectively. The fitted values for the mass, width and branching ratio of the Higgs using b-tagging are shown in Table~\ref{table:m-g-meas} and a fit to simulated data can be found in Appendix~\ref{sec:sim-evt-cts}.
+	Table~\ref{bfs-xsects} compares the branching ratios and cross sections of the Z background with the Higgs signal. The largest Higgs decay channel is $h^0\rightarrow b\bar{b}$, which makes up 58\% of Higgs decays at this mass, a branching fraction proportionally large to $Br(Z^0\rightarrow b\bar{b}) = 15.2\%$. We assume a b-tagging efficiency and purity of 1, so the cross sections for the decays are 16.5 and 57.2 pb, respectively. The fitted values for the mass, width and branching ratio of the Higgs using b-tagging are shown in Table~\ref{table:m-g-meas} and a fit to simulated data can be found in Appendix~\ref{sec:sim-evt-cts}.
 
 	In both signal and background the visible energy spectrum is very similar to the spectrum of the combined channels, so the same total energy cut of $E_{tot}>98.0 GeV$ maximizes $S/\sqrt{B}$. Cuts on the event shape, the magnitude of the thrust and major axis, can further enhance the signal. The event shape is calculated by finding the axis which maximizes the sum of all particle momenta projected onto a single axis, called the `thrust axis'. This is then repeated for an axis perpendicular to the first and then a third orthogonal to both. The thrust is the normalized sum of the projection of all particle momenta against the thrust axis and the major axis value is the normalized sum of the projections against the secondary axis. Because the Higgs is never created in events with significant beamstrahlung it is always produced with low momentum. Z bosons produced with mass lower than the beam center-of-mass energy are `boosted' by the beamstrahlung photon. This boost lowers the thrust and raises the major axis values, so it is a useful indicator for channels with particular event shape profiles.
 	
@@ -191,12 +192,12 @@ Figure~\ref{bbbar-en-thrust-cuts} shows the signal and background thrust and maj
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{data-fit-bbbar-cut}
-	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting $X\rightarrow b\bar{b}$ events with a total energy of at least 98.0 GeV visible to the detector and cutting on event shape parameters. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $4.78\pm0.48$ MeV, the error in the mass measurement is $0.01\pm0.05$ MeV and the branching ratio is measured at $0.271\pm0.001$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
+	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting $X\rightarrow b\bar{b}$ events with a total energy of at least 98.0 GeV visible to the detector and cutting on event shape parameters. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $4.78\pm0.48$ MeV, the error in the mass measurement is $0.01\pm0.05$ MeV and the branching ratio is measured at $0.271\pm0.001$. Total luminosity is $1000pb^{-1}$, or $71.4pb^{-1}$ per point.}
 \label{data-fit-bbbar-cut}
 \end{figure}
 
-\subsection{$H^0\rightarrow WW^*$}
-There are several channels with very little physics background that are of importance, despite their smaller cross sections. One of these is the $H^0\rightarrow WW^*$ decay mode, with a branching fraction of 0.226 (cross section 6.39 pb) and no real background from the corresponding Z decays. The W boson decays into a charged lepton and corresponding neutrino 32.4\% of the time, with effectively equal rates for each type of lepton. The majority of the remaining branching fraction is the decay into pairs of light quarks. While it is certainly possible to reconstruct W bosons from four-jet events, in this report we focus on the decays with missing energy in the form of neutrinos since they can be identified by the presence of one or two isolated leptons and missing energy and are the most common. Further study will be required for a detailed analysis of the four-jet case. Since the W boson decays into a lepton and neutrino 32.4\% of the time and we require at least one such decay between a pair of W's, these make up 54.3\% of $WW^*$ events. Thus the theoretical cross section is 6.39 pb with virtually no background.
+\subsection{$h^0\rightarrow WW^*$}
+There are several channels with very little physics background that are of importance, despite their smaller cross sections. One of these is the $h^0\rightarrow WW^*$ decay mode, with a branching fraction of 0.226 (cross section 6.39 pb) and no real background from the corresponding Z decays. The W boson decays into a charged lepton and corresponding neutrino 32.4\% of the time, with effectively equal rates for each type of lepton. The majority of the remaining branching fraction is the decay into pairs of light quarks. While it is certainly possible to reconstruct W bosons from four-jet events, in this report we focus on the decays with missing energy in the form of neutrinos since they can be identified by the presence of one or two isolated leptons and missing energy and are the most common. Further study will be required for a detailed analysis of the four-jet case. Since the W boson decays into a lepton and neutrino 32.4\% of the time and we require at least one such decay between a pair of W's, these make up 54.3\% of $WW^*$ events. Thus the theoretical cross section is 6.39 pb with virtually no background.
 
 Because the detector will have a non-sensitive cone, there will be a small amount of `fake' background, eg.~when the photon in the decay $\mu^+\mu^-\rightarrow Z^0+\gamma\rightarrow\ell^++\ell^-$ boosts the two leptons and disappears into the cone as missing energy. Figure~\ref{fig:evt-disp-ww-e-tau-nunu} in Appendix~\ref{sec:evt-display} shows an example event display for a $WW^*$ decay into two leptons and illustrates the characteristic missing energy of these events. It is difficult to estimate the true background from processes such as these, but given the low branching ratios of $Z^0$ to lepton pairs and the kinematic and geometric constraints for `fake' background, it is safe to assume that the background will be fairly low in this channel. Therefore we use the rate assumed by Han \emph{et al}\cite{han-higgs-measurement}, a cross-section of 0.051 pb. Plots of simulated data for the $WW^*$ channel can be found in Appendix~\ref{sec:sim-evt-cts} and fitted values in Table~\ref{table:h-fits}.
 
@@ -211,14 +212,14 @@ The $\tau^+\tau^-$ channel is dominated by the background, but the Higgs branchi
 
 The $\tau$ is a short-lived particle and every $\tau$ decay channel involves the production of a $\tau$ neutrino. This makes the total visible energy less useful as a cut parameter than it was for $b\bar{b}$, since there are random amounts of missing energy. We require at least 60.0 GeV to be visible because background dominates below this value due to boosted Z's. Event shape parameters, however, are very useful here since $\tau$ decays typically do not create a widespread shower. We require the thrust to be between 0.999 and 1.0 and the major axis to be between 0.007 and 0.03. This cut reduces the signal to 78\% of its original value and the background to 39\%, bringing the Higgs cross section to 1.58 pb and the background to 4.97 pb, as seen in Figure~\ref{tautau-en-thrust-cuts}. The cut is specific enough that it is not necessary to assume anything else about the events, such as a perfect $\tau^+\tau^-$ tag. Fewer than 0.2\% of the Higgs decays that pass the cut are not $\tau^+\tau^-$ events and only 6.4\% of the background events that pass are misidentified. The effective background cross section above is calculated from all the events which pass the cut. Plots of simulated data can be found in Appendix~\ref{sec:sim-evt-cts} and fitted values can be found in Table~\ref{table:h-fits}.
 
-\subsection{$H^0\rightarrow \gamma\gamma$}
-The final channel examined in this report is the $H^0\rightarrow \gamma\gamma$ channel. The Higgs branching fraction for this channel is only 0.3\%, but the events can't be easily identified by selecting events with two photons with equal energy adding up to $\sqrt{s}$ and high thrust. About 10\% of these events are lost when one or both photons hit the cone and there is no background so the cross section is 0.077 pb. The high purity of this channel is a great advantage, but the small cross section makes it impractical for scanning the beam energy to find the Higgs peak as it takes a great deal of luminosity to expect more than a few events on the peak. This channel will require much luminosity but may prove very useful for precise measurements of the Higgs.
+\subsection{$h^0\rightarrow \gamma\gamma$}
+The final channel examined in this report is the $h^0\rightarrow \gamma\gamma$ channel. The Higgs branching fraction for this channel is only 0.3\%, but the events can't be easily identified by selecting events with two photons with equal energy adding up to $\sqrt{s}$ and high thrust. About 10\% of these events are lost when one or both photons hit the cone and there is no background so the cross section is 0.077 pb. The high purity of this channel is a great advantage, but the small cross section makes it impractical for scanning the beam energy to find the Higgs peak as it takes a great deal of luminosity to expect more than a few events on the peak. This channel will require much luminosity but may prove very useful for precise measurements of the Higgs.
 
 \begin{table}
 	\centerline{
 	\begin{tabular}{|c|l|l|l|l|l|l|l|}
 		\hline
-		\multirow{2}{*}{Channel} & \multicolumn{3}{|c|}{$\mu^+\mu^-\rightarrow H^0 \rightarrow X$} & \multicolumn{3}{|c|}{$\mu^+\mu^-\rightarrow Z\gamma^* \rightarrow X$} & \multirow{2}{*}{$S/\sqrt{B}$} \\
+		\multirow{2}{*}{Channel} & \multicolumn{3}{|c|}{$\mu^+\mu^-\rightarrow h^0 \rightarrow X$} & \multicolumn{3}{|c|}{$\mu^+\mu^-\rightarrow Z\gamma^* \rightarrow X$} & \multirow{2}{*}{$S/\sqrt{B}$} \\
 		\cline{2-7}
 		& Br &\multicolumn{2}{|c|}{$\sigma$ (pb)} & Br & \multicolumn{2}{|c|}{$\sigma$ (pb)} &  \\
 		\hline
@@ -257,7 +258,7 @@ The final channel examined in this report is the $H^0\rightarrow \gamma\gamma$ c
 	\centerline{
 	\begin{tabular}{|c|r|l|l|l|}
 		\hline
-		\multirow{2}{*}{Channel}	&\multirow{2}{*}{}	& \multirow{2}{*}{$\Gamma_{H\rightarrow X} (MeV)$}	& \multirow{2}{*}{$\Delta M_H (MeV)$}	& \multirow{2}{*}{$Br(H^0\rightarrow X)$} \\
+		\multirow{2}{*}{Channel}	&\multirow{2}{*}{}	& \multirow{2}{*}{$\Gamma_{h\rightarrow X} (MeV)$}	& \multirow{2}{*}{$\Delta M_h (MeV)$}	& \multirow{2}{*}{$Br(h^0\rightarrow X)$} \\
 		&	&	&	&\\
 		\hline
 		\multirow{2}{*}{Total}	&
@@ -282,7 +283,7 @@ The final channel examined in this report is the $H^0\rightarrow \gamma\gamma$ c
 		\hline
 	\end{tabular}
 	}
-	\caption{Fitted values of Higgs decay width, mass and branching ratio from simulated data. Mass values are the difference between the measured mass and the true mass of 126,000 MeV. Total integrated luminosity was $1~fb^{-1}$, or $71.4 pb^{-1}$ per data point.}
+	\caption{Fitted values of Higgs decay width, mass and branching ratio from simulated data. Mass values are the difference between the measured mass and the true mass of 126,000 MeV. Total integrated luminosity was $1~fb^{-1}$, or $71.4pb^{-1}$ per data point.}
 \label{table:h-fits}
 \end{table}
 
@@ -312,7 +313,7 @@ We performed the same simulated experiments using our estimated cross sections f
 	\begin{center}
 		\begin{tabular}{|c|l|l|l|}
 			\hline
-			Channel	& $\delta M_H$ (MeV)	& $\delta \Gamma_H$ (MeV)	& $\delta Br(H^0\rightarrow X)$ \\ \hline
+			Channel	& $\delta M_h$ (MeV)	& $\delta \Gamma_h$ (MeV)	& $\delta Br(h^0\rightarrow X)$ \\ \hline
 			$b\bar{b}$	& 0.30	& 0.60	& 0.09	\\ \hline
 			$WW^*$		& 0.40	& 0.75	& 0.02	\\ \hline
 			Combined	& 0.25	& 0.45	& ---	\\ \hline
@@ -323,7 +324,7 @@ We performed the same simulated experiments using our estimated cross sections f
 
 To measure the Higgs mass and total width more precisely, we took advantage of both channels. We did this by simulating data for both channels at the same time and taking their average, weighted by the uncertainty in the fits. For example, the formula used for the width was:
 \begin{equation}
-	\delta \overline{\Gamma_H} = \frac{\delta \Gamma_{b\bar{b}}}{\delta \Gamma_{b\bar{b}} + \delta \Gamma_{WW^*}}\Gamma_{WW^*} + \frac{\delta \Gamma_{WW*}}{\delta \Gamma_{b\bar{b}} + \delta \Gamma_{WW^*}}\Gamma_{b\bar{b}}\label{eq:weight-avg}
+	\delta \overline{\Gamma_h} = \frac{\delta \Gamma_{b\bar{b}}}{\delta \Gamma_{b\bar{b}} + \delta \Gamma_{WW^*}}\Gamma_{WW^*} + \frac{\delta \Gamma_{WW*}}{\delta \Gamma_{b\bar{b}} + \delta \Gamma_{WW^*}}\Gamma_{b\bar{b}}\label{eq:weight-avg}
 \end{equation}
 As shown in Figure~\ref{fig:fitted-vals-boxpl-mix}, the mass measurement was found to be accurate within 0.25 MeV and the total width was accurate within 0.45 MeV. All the estimated accuracies can be found in Table~\ref{table:fitted-vals-boxpl}.
 
@@ -366,7 +367,7 @@ As shown in Figure~\ref{fig:fitted-vals-boxpl-mix}, the mass measurement was fou
 
 	We next tried the search strategy using tagging of $b\bar{b}$ events and the effect of implementing the energy and event shape cuts described above. As shown in Figures~\ref{fig:lum-needed-bbar-raw} and~\ref{fig:lum-needed-bbar-cut}, the cuts reduced the required luminosity by a factor of about two. As expected, a beam width near the actual Higgs width continues to be the most effective.
 
-	Finally, we looked at $H^0 \rightarrow WW^*$ events with a lepton and missing energy, as described above. The high purity and relatively large cross section of this channel makes it significantly better than other channels for searching for the Higgs (Figure~\ref{fig:lum-needed-ww-cut}). Interestingly, it also appears that the low background removes the necessity for a beam with a width near the Higgs decay width; beam widths in the range from 4.2 MeV to 25 MeV fare similarly with this search strategy in terms of luminosity.
+	Finally, we looked at $h^0 \rightarrow WW^*$ events with a lepton and missing energy, as described above. The high purity and relatively large cross section of this channel makes it significantly better than other channels for searching for the Higgs (Figure~\ref{fig:lum-needed-ww-cut}). Interestingly, it also appears that the low background removes the necessity for a beam with a width near the Higgs decay width; beam widths in the range from 4.2 MeV to 25 MeV fare similarly with this search strategy in terms of luminosity.
 
 	\subsection{Combined Channels}
 
@@ -410,7 +411,7 @@ As shown in Figure~\ref{fig:fitted-vals-boxpl-mix}, the mass measurement was fou
 \section{Discussion and Conclusion}
 The Higgs boson is a particle of fundamental importance to physics and measuring its properties with precision will allow us to probe the limits of the Standard Model and may point the way towards non-Standard model physics. Using simple estimates of physics backgrounds and separable signal we have estimated that with $1~fb^{-1}$ of integrated luminosity a hypothetical muon collider Higgs factory operating at the Higgs s-channel resonance could measure the mass of a Standard Model 126 GeV Higgs to within 0.25 MeV and its total width to within 0.45 MeV. We estimated that with a beam spread of 4.2 MeV, approximately 368 $pb^{-1}$ total integrated luminosity would be required to guarantee locating the narrow Higgs peak. We believe that these preliminary results strongly motivate further research and development towards the construction of a muon collider Higgs factory.
 
-Our estimations assume that there is no machine-induced background and that the detector has excellent tracking and calorimetry. Our results demonstrate the value of the high Higgs cross section and narrow beam energy spread available at a muon collider. These two factors enable the direct measurement of the Higgs mass and width by scanning the Higgs s-channel resonance, which is not possible at any $e^+e^-$ collider. Our study of the physics-induced background and separation of the Higgs signal showed that significant reduction of the physics background can be achieved by a detector with high energy and spatial resolution. We believe that this report justifies more in-depth analysis of Higgs channels and their backgrounds, for example the reconstruction of $H^0\rightarrow WW^*\rightarrow 4j$ events using learning algorithms or the application of flavor-tagging techniques to tag $b\bar{b}$ events. 
+Our estimations assume that there is no machine-induced background and that the detector has excellent tracking and calorimetry. Our results demonstrate the value of the high Higgs cross section and narrow beam energy spread available at a muon collider. These two factors enable the direct measurement of the Higgs mass and width by scanning the Higgs s-channel resonance, which is not possible at any $e^+e^-$ collider. Our study of the physics-induced background and separation of the Higgs signal showed that significant reduction of the physics background can be achieved by a detector with high energy and spatial resolution. We believe that this report justifies more in-depth analysis of Higgs channels and their backgrounds, for example the reconstruction of $h^0\rightarrow WW^*\rightarrow 4j$ events using learning algorithms or the application of flavor-tagging techniques to tag $b\bar{b}$ events. 
 
 Machine-induced backgrounds, mainly from muon decays in the beam, present an additional difficulty which has not yet been studied in great detail. We believe that in addition to significant shielding in the detector cone and endcaps, it may be important to have a calorimeter with high spatial and temporal resolution. Our results motivate an in-depth analysis of the machine-induced background including simulation in a highly segmented, totally-active, dual readout calorimeter such as the MCDRCal01 detector concept.
 
@@ -424,37 +425,37 @@ We would like to thank Young-Kee Kim, Estia Eichten, Ron Lipton, Nikolai Terenti
 
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{data-fit-bbbar-raw}
-	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $X\rightarrow b\bar{b}$ events. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $3.49\pm1.83$ MeV, the error in the mass measurement is $-0.06\pm0.19$ MeV and the branching ratio is measured at $0.67\pm0.05$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
+	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $X\rightarrow b\bar{b}$ events. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $3.49\pm1.83$ MeV, the error in the mass measurement is $-0.06\pm0.19$ MeV and the branching ratio is measured at $0.67\pm0.05$. Total luminosity is $1000pb^{-1}$, or $71.4pb^{-1}$ per point.}
 \label{data-fit-bbbar-raw}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{data-fit-ww-raw}
-	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $H^0\rightarrow WW^*$ events with a minimal background. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $4.06\pm0.24$ MeV, the error in the mass measurement is $0.00\pm0.07$ MeV and the branching ratio is measured at $0.217\pm0.001$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
+	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $h^0\rightarrow WW^*$ events with a minimal background. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $4.06\pm0.24$ MeV, the error in the mass measurement is $0.00\pm0.07$ MeV and the branching ratio is measured at $0.217\pm0.001$. Total luminosity is $1000pb^{-1}$, or $71.4pb^{-1}$ per point.}
 \label{data-fit-ww-raw}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{data-fit-ww-cut}
-	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $H^0\rightarrow WW^*\rightarrow$ lepton + missing energy events with a minimal background. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $3.96\pm0.17$ MeV, the error in the mass measurement is $-0.16\pm0.04$ MeV and the branching ratio is measured at $0.1271\pm0.0002$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
+	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $h^0\rightarrow WW^*\rightarrow$ lepton + missing energy events with a minimal background. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $3.96\pm0.17$ MeV, the error in the mass measurement is $-0.16\pm0.04$ MeV and the branching ratio is measured at $0.1271\pm0.0002$. Total luminosity is $1000pb^{-1}$, or $71.4pb^{-1}$ per point.}
 \label{data-fit-ww-cut}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{data-fit-tt-raw}
-	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $X\rightarrow \tau^+\tau^-$ events. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $4.82\pm4.46$ MeV, the error in the mass measurement is $-0.54\pm0.47$ MeV and the branching ratio is measured at $0.0623\pm0.0005$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
+	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $X\rightarrow \tau^+\tau^-$ events. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $4.82\pm4.46$ MeV, the error in the mass measurement is $-0.54\pm0.47$ MeV and the branching ratio is measured at $0.0623\pm0.0005$. Total luminosity is $1000pb^{-1}$, or $71.4pb^{-1}$ per point.}
 \label{data-fit-tt-raw}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{data-fit-tt-cut}
-	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting $X\rightarrow \tau^+\tau^-$ events with a total energy of at least 60.0 GeV visible to the detector and cutting on event shape parameters. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $0.84\pm2.97$ MeV, the error in the mass measurement is $1.07\pm0.30$ MeV and the branching ratio is measured at $0.24\pm0.23$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
+	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting $X\rightarrow \tau^+\tau^-$ events with a total energy of at least 60.0 GeV visible to the detector and cutting on event shape parameters. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $0.84\pm2.97$ MeV, the error in the mass measurement is $1.07\pm0.30$ MeV and the branching ratio is measured at $0.24\pm0.23$. Total luminosity is $1000pb^{-1}$, or $71.4pb^{-1}$ per point.}
 \label{data-fit-tt-cut}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{data-fit-gg-cut}
-	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $H^0\rightarrow \gamma\gamma$ events. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $2.85\pm5.73$ MeV, the error in the mass measurement is $-0.6\pm0.9$ MeV and the branching ratio is measured at $0.0035\pm0.0001$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
+	\caption{Simulated event counts for a scan across a 126.0 GeV Higgs peak with a 4.2 MeV wide Gaussian beam spread, counting all $h^0\rightarrow \gamma\gamma$ events. Data is taken in a 60 MeV range centered on the Higgs mass in bins separated by the beam width of 4.2 MeV. Event counts are calculated as Poisson-distributed random variables and the data is fit to a Breit-Wigner convoluted with a Gaussian plus linear background. The fit width is $2.85\pm5.73$ MeV, the error in the mass measurement is $-0.6\pm0.9$ MeV and the branching ratio is measured at $0.0035\pm0.0001$. Total luminosity is $1000pb^{-1}$, or $71.4 pb^{-1}$ per point.}
 \label{data-fit-gg-cut}
 \end{figure}
 
@@ -478,26 +479,26 @@ We would like to thank Young-Kee Kim, Estia Eichten, Ron Lipton, Nikolai Terenti
 
 \subsection{Event Displays}
 \label{sec:evt-display}
-The following event displays were generated using the WIRED4 plug-in for JAS3 using $\mu^+\mu^-\rightarrow H^0$ events with $\sqrt{\hat{s}} = M_H = 125.0 GeV$ generated by PYTHIA 6.4 and simulated in the MCDRCal01 concept detector using SLIC.\@
+The following event displays were generated using the WIRED4 plug-in for JAS3 using $\mu^+\mu^-\rightarrow h^0$ events with $\sqrt{\hat{s}} = M_h = 125.0 GeV$ generated by PYTHIA 6.4 and simulated in the MCDRCal01 concept detector using SLIC.\@
 
 \begin{figure}[h]
 	\includegraphics[width=\textwidth]{h-bbbar}
-	\caption{Example $H^0\rightarrow b\bar{b}$ event display.\label{fig:evt-disp-bbbar}}
+	\caption{Example $h^0\rightarrow b\bar{b}$ event display.\label{fig:evt-disp-bbbar}}
 \end{figure}
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{h-bbbar-vtex3}
-	\caption{Example $H^0\rightarrow b\bar{b}$ event display with fisheye projection to illustrate the displaced b vertices.\label{fig:evt-disp-bbbar-fish}}
+	\caption{Example $h^0\rightarrow b\bar{b}$ event display with fisheye projection to illustrate the displaced b vertices.\label{fig:evt-disp-bbbar-fish}}
 \end{figure}
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{h-ww-e-tau-nunu}
-	\caption{Example $H^0\rightarrow WW^*\rightarrow e^- + \bar{\nu_e} + \tau^+ + \nu_\tau$ event display. Yellow lines indicate neutrinos.\label{fig:evt-disp-ww-e-tau-nunu}}
+	\caption{Example $h^0\rightarrow WW^*\rightarrow e^- + \bar{\nu_e} + \tau^+ + \nu_\tau$ event display. Yellow lines indicate neutrinos.\label{fig:evt-disp-ww-e-tau-nunu}}
 \end{figure}
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{h-tautau2}
-	\caption{Example $H^0\rightarrow \tau^+\tau^-$ event display.\label{fig:evt-disp-tautau}}
+	\caption{Example $h^0\rightarrow \tau^+\tau^-$ event display.\label{fig:evt-disp-tautau}}
 \end{figure}
 
  
