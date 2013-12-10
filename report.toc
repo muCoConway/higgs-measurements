@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}S-Channel Resonant Higgs Boson Production}{3}
+\contentsline {section}{\numberline {2}Muon Collider as a Higgs Factory}{3}
+\contentsline {subsection}{\numberline {2.1}Lepton Mass Coupling}{3}
+\contentsline {subsection}{\numberline {2.2}Beam Energy Resolution}{3}
+\contentsline {section}{\numberline {3}Machine Induced Background}{4}
+\contentsline {section}{\numberline {4}Physics Background}{4}
+\contentsline {subsection}{\numberline {4.1}Low-Mass Z bosons}{4}
+\contentsline {subsection}{\numberline {4.2}$b\mathaccentV {bar}016{b}$}{6}
+\contentsline {subsection}{\numberline {4.3}$H^0\rightarrow WW^*$}{8}
+\contentsline {subsection}{\numberline {4.4}$\tau ^+\tau ^-$}{9}
+\contentsline {subsection}{\numberline {4.5}$H^0\rightarrow \gamma \gamma $}{10}
+\contentsline {section}{\numberline {5}Higgs Measurements}{13}
+\contentsline {subsection}{\numberline {5.1}Measurements With the $b\mathaccentV {bar}016{b}$ Channel}{14}
+\contentsline {subsection}{\numberline {5.2}Measurements with the $WW^*$ Channel}{14}
+\contentsline {subsection}{\numberline {5.3}Combining Channels}{14}
+\contentsline {section}{\numberline {6}Finding the Higgs Peak}{17}
+\contentsline {subsection}{\numberline {6.1}Guaranteeing a Significant Signal}{17}
+\contentsline {subsection}{\numberline {6.2}Search Strategy}{19}
+\contentsline {subsection}{\numberline {6.3}Required Luminosity}{19}
+\contentsline {subsection}{\numberline {6.4}Combined Channels}{22}
+\contentsline {section}{\numberline {7}Discussion and Conclusion}{22}
+\contentsline {section}{\numberline {8}Acknowledgements}{23}
+\contentsline {section}{\numberline {A}Additional Figures}{24}
+\contentsline {subsection}{\numberline {A.1}Simulated Event Counts}{24}
+\contentsline {subsection}{\numberline {A.2}Search Strategy}{27}
+\contentsline {subsection}{\numberline {A.3}Event Displays}{29}

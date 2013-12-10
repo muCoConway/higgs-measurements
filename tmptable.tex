@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+\pdfoutput=1
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+
+\begin{document}
+
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			\multirow{2}{*}{Decay Mode} & \multicolumn{2}{|c|}{$Z$} & \multicolumn{2}{|c|}{$H^0$} \\ \cline{2-5}
+			& BR & $\sigma$ (pb) & BR & $\sigma$ (pb) \\ 
+			\hline
+			$u\bar{u}$,$d\bar{d}$,$s\bar{s}$ & 0.427 & 160.6 & 0.0003 & 0.009 \\ \hline
+			$c\bar{c}$      & 0.119 & 44.8 & 0.029 & 0.88 \\ \hline
+			$b\bar{b}$      & 0.152 & 57.2 & 0.577 & 17.5 \\ \hline
+			$e^+e^-$        & 0.036 & 13.5 & --- & --- \\ \hline
+			$\mu^+\mu^-$    & 0.037 & 13.9 & 0.00022 & 0.007 \\ \hline
+			$\tau^+\tau^-$  & 0.034 & 12.8 & 0.063 & 1.91 \\ \hline
+			$\nu_{\ell}\bar{\nu_{\ell}}$    & 0.200 & 75.4  & --- & --- \\ \hline
+			$gg$                    & ---   & ---   & 0.086 & 2.61 \\ \hline
+			$\gamma\gamma$			& ---   & ---   & 0.002 & 0.061 \\ \hline
+			$WW^*$                  & ---   & ---   & 0.215 & 6.51 \\ \hline
+			$Z\gamma$				& ---	& ---	& 0.0015& 0.05	\\ \hline
+			$Z^0Z^0$                & ---   & ---   & 0.026 & 0.79 \\
+			\hline \hline
+			Total:  & 1.0 & 376.3 & 1.0 & 30.3 \\ \hline
+		\end{tabular}
+	\end{center}
+	\caption{Branching fractions and effective cross sections for Standard Model decay modes of Higgs and Z bosons. Higgs cross sections are calculated as the peak value of the Higgs peak Breit-Wigner convoluted with a Gaussian of width 3.75 MeV to simulate the effect of beam smearing. Higgs branching ratios are taken from LHC Higgs Cross Section Working Group tables for 125 GeV Higgs. Z branching ratios taken from PYTHIA 6.4 event generation output.\label{bfs-xsects}}
+\end{table}
+
+\begin{table}
+	\begin{tabular}{|c|l|l|l|l|}
+		\hline
+		Channel	& \multicolumn{2}{|c|}{Cross Sections ($pb$)}	& $S/\sqrt{B}$ \\
+		\hline
+		\multirow{2}{*}{Total}
+		% Beam-smeared total cross section
+		% M_h = 125GeV, G_h = 4.07 MeV (from LHC working group), 4.07 MeV beam
+			& $\sigma_s$	& 27.3	& \multirow{2}{*}{1.61} \\
+			& $\sigma_b$	& 286.3 &	\\
+		\hline
+		\multirow{2}{*}{$b\bar{b}$}
+			& $\sigma_s$	& 8.90	& \multirow{2}{*}{2.57} \\
+			& $\sigma_b$	& 11.95 &	\\
+		\hline
+	\end{tabular}
+\end{table}
+\end{document}

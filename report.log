@@ -1,0 +1,758 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.7.11)  16 JUL 2013 13:35
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+(/usr/share/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count89
+\calc@Bcount=\count90
+\calc@Adimen=\dimen105
+\calc@Bdimen=\dimen106
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count91
+\calc@Cskip=\skip45
+)
+(/usr/share/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen107
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks18
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks19
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks20
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count104
+\l_MT_multwidth_dim=\dimen116
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen117
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen118
+\l_MT_above_intertext_sep=\dimen119
+\l_MT_below_intertext_sep=\dimen120
+\l_MT_above_shortintertext_sep=\dimen121
+\l_MT_below_shortintertext_sep=\dimen122
+)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/02/03 v3.3-65 Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+\c@ContinuedFloat=\count105
+Package caption Info: float package is loaded.
+)
+(/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count106
+\c@subtable=\count107
+)
+(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen130
+) (./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen131
+\scratchbox=\box30
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen132
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (./report.toc)
+\tf@toc=\write3
+\openout3 = `report.toc'.
+
+
+
+LaTeX Warning: Citation `cern-press' on page 1 undefined on input line 68.
+
+
+LaTeX Warning: Citation `lhc-higgs-width' on page 1 undefined on input line 68.
+
+
+
+LaTeX Warning: Citation `higgs-handbook' on page 1 undefined on input line 68.
+
+
+LaTeX Warning: Citation `lhc-higgs-width' on page 1 undefined on input line 68.
+
+
+
+LaTeX Warning: Citation `H-meas-muller' on page 1 undefined on input line 68.
+
+
+LaTeX Warning: Citation `lhc-higgs-width' on page 1 undefined on input line 68.
+
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation `HF-tech-opt-delahaye' on page 2 undefined on input lin
+e 70.
+
+
+LaTeX Warning: Citation `han-higgs-measurement' on page 2 undefined on input li
+ne 78.
+
+[2]
+
+LaTeX Warning: Citation `mc-physics-eich' on page 3 undefined on input line 87.
+
+
+
+LaTeX Warning: Citation `mc-physics-eich' on page 3 undefined on input line 89.
+
+
+
+LaTeX Warning: Citation `map-palmer' on page 3 undefined on input line 95.
+
+
+LaTeX Warning: Citation `mc-physics-eich' on page 3 undefined on input line 97.
+
+
+
+LaTeX Warning: Citation `map-palmer' on page 3 undefined on input line 97.
+
+[3]
+
+LaTeX Warning: Reference `fig:detector' on page 4 undefined on input line 100.
+
+
+LaTeX Warning: Reference `sec:evt-display' on page 4 undefined on input line 10
+0.
+
+<./images/mcdrcal01.png, id=29, 1185.42876pt x 777.90625pt>
+File: ./images/mcdrcal01.png Graphic file (type png)
+
+<use ./images/mcdrcal01.png>
+Package pdftex.def Info: ./images/mcdrcal01.png used on input line 103.
+(pdftex.def)             Requested size: 345.0pt x 226.39418pt.
+
+
+LaTeX Warning: Reference `sec:evt-display' on page 4 undefined on input line 10
+4.
+
+
+LaTeX Warning: Reference `sec:evt-display' on page 4 undefined on input line 10
+4.
+
+
+LaTeX Warning: Reference `data-fit-total-raw' on page 4 undefined on input line
+ 108.
+
+<./images/data-fit-total-raw.png, id=30, 578.16pt x 433.62pt>
+File: ./images/data-fit-total-raw.png Graphic file (type png)
+
+<use ./images/data-fit-total-raw.png>
+Package pdftex.def Info: ./images/data-fit-total-raw.png used on input line 111
+.
+(pdftex.def)             Requested size: 310.4979pt x 232.87433pt.
+
+
+LaTeX Warning: Reference `table:m-g-meas' on page 4 undefined on input line 112
+.
+
+
+LaTeX Warning: Reference `table:m-g-meas' on page 4 undefined on input line 112
+.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `z-mass-plot' on page 4 undefined on input line 117.
+
+
+LaTeX Warning: Reference `fig:mumu-zg-ql' on page 4 undefined on input line 117
+.
+
+
+LaTeX Warning: Reference `fig:mumu-zstar-ql' on page 4 undefined on input line 
+117.
+
+<./images/z-masses.png, id=32, 703.62875pt x 400.49625pt>
+File: ./images/z-masses.png Graphic file (type png)
+
+<use ./images/z-masses.png>
+Package pdftex.def Info: ./images/z-masses.png used on input line 121.
+(pdftex.def)             Requested size: 345.0pt x 196.3671pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/mumu-zstar-ql.pdf, id=33, 387.4475pt x 144.54pt>
+File: ./images/mumu-zstar-ql.pdf Graphic file (type pdf)
+
+<use ./images/mumu-zstar-ql.pdf>
+Package pdftex.def Info: ./images/mumu-zstar-ql.pdf used on input line 130.
+(pdftex.def)             Requested size: 137.9979pt x 51.48076pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]\OT1/cmr/m/n/9 (a) |Ir-re-ducible back-ground:
+ []
+
+<./images/mumu-zg-ql.pdf, id=34, 387.4475pt x 183.68625pt>
+File: ./images/mumu-zg-ql.pdf Graphic file (type pdf)
+
+<use ./images/mumu-zg-ql.pdf>
+Package pdftex.def Info: ./images/mumu-zg-ql.pdf used on input line 137.
+(pdftex.def)             Requested size: 137.9979pt x 65.42348pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/9 (b) |Re-ducible back-ground:
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/data-fit-total-cut.png, id=35, 578.16pt x 433.62pt>
+File: ./images/data-fit-total-cut.png Graphic file (type png)
+
+<use ./images/data-fit-total-cut.png>
+Package pdftex.def Info: ./images/data-fit-total-cut.png used on input line 147
+.
+(pdftex.def)             Requested size: 310.4979pt x 232.87433pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `data-fit-total-cut' on page 4 undefined on input line
+ 152.
+
+[4] [5 <./images/mcdrcal01.png>]
+
+LaTeX Warning: Reference `bfs-xsects' on page 6 undefined on input line 180.
+
+
+LaTeX Warning: Reference `table:m-g-meas' on page 6 undefined on input line 180
+.
+
+
+LaTeX Warning: Reference `sec:sim-evt-cts' on page 6 undefined on input line 18
+0.
+
+[6 <./images/data-fit-total-raw.png>]
+<./images/bbbar-en-thrust-cuts.png, id=47, 918.43124pt x 581.17125pt>
+File: ./images/bbbar-en-thrust-cuts.png Graphic file (type png)
+
+<use ./images/bbbar-en-thrust-cuts.png>
+Package pdftex.def Info: ./images/bbbar-en-thrust-cuts.png used on input line 1
+85.
+(pdftex.def)             Requested size: 345.0pt x 218.31113pt.
+
+
+LaTeX Warning: Reference `bbbar-en-thrust-cuts' on page 7 undefined on input li
+ne 190.
+
+
+LaTeX Warning: Reference `data-fit-bbbar-cut' on page 7 undefined on input line
+ 190.
+
+<./images/data-fit-bbbar-cut.png, id=48, 578.16pt x 433.62pt>
+File: ./images/data-fit-bbbar-cut.png Graphic file (type png)
+
+<use ./images/data-fit-bbbar-cut.png>
+Package pdftex.def Info: ./images/data-fit-bbbar-cut.png used on input line 193
+.
+(pdftex.def)             Requested size: 345.0pt x 258.74484pt.
+ [7 <./images/z-masses.png>] [8 <./images/mumu-zstar-ql.pdf> <./images/mumu-zg-
+ql.pdf>]
+
+LaTeX Warning: Reference `fig:evt-disp-ww-e-tau-nunu' on page 9 undefined on in
+put line 201.
+
+
+LaTeX Warning: Reference `sec:evt-display' on page 9 undefined on input line 20
+1.
+
+
+LaTeX Warning: Citation `han-higgs-measurement' on page 9 undefined on input li
+ne 201.
+
+
+LaTeX Warning: Reference `sec:sim-evt-cts' on page 9 undefined on input line 20
+1.
+
+
+LaTeX Warning: Reference `table:h-fits' on page 9 undefined on input line 201.
+
+<./images/tautau-en-thrust-cuts.png, id=84, 830.10126pt x 609.27625pt>
+File: ./images/tautau-en-thrust-cuts.png Graphic file (type png)
+
+<use ./images/tautau-en-thrust-cuts.png>
+Package pdftex.def Info: ./images/tautau-en-thrust-cuts.png used on input line 
+207.
+(pdftex.def)             Requested size: 345.0pt x 253.2168pt.
+ [9 <./images/data-fit-total-cut.png>]
+
+LaTeX Warning: Reference `tautau-en-thrust-cuts' on page 10 undefined on input 
+line 212.
+
+
+LaTeX Warning: Reference `sec:sim-evt-cts' on page 10 undefined on input line 2
+12.
+
+
+LaTeX Warning: Reference `table:h-fits' on page 10 undefined on input line 212.
+
+
+[10 <./images/bbbar-en-thrust-cuts.png>] [11 <./images/data-fit-bbbar-cut.png>]
+[12 <./images/tautau-en-thrust-cuts.png>] [13]
+
+LaTeX Warning: Reference `fig:fitted-vals-boxpl-bb' on page 14 undefined on inp
+ut line 293.
+
+<./images/fitted-vals-boxpl-bb.png, id=106, 634.5306pt x 727.7589pt>
+File: ./images/fitted-vals-boxpl-bb.png Graphic file (type png)
+
+<use ./images/fitted-vals-boxpl-bb.png>
+Package pdftex.def Info: ./images/fitted-vals-boxpl-bb.png used on input line 2
+96.
+(pdftex.def)             Requested size: 345.0pt x 395.7046pt.
+
+
+LaTeX Warning: Reference `fig:fitted-vals-boxpl-ww' on page 14 undefined on inp
+ut line 303.
+
+
+LaTeX Warning: Reference `table:fitted-vals-boxpl' on page 14 undefined on inpu
+t line 303.
+
+<./images/fitted-vals-boxpl-ww.png, id=107, 636.6987pt x 723.4227pt>
+File: ./images/fitted-vals-boxpl-ww.png Graphic file (type png)
+
+<use ./images/fitted-vals-boxpl-ww.png>
+Package pdftex.def Info: ./images/fitted-vals-boxpl-ww.png used on input line 3
+06.
+(pdftex.def)             Requested size: 345.0pt x 391.98914pt.
+ [14] [15 <./images/fitted-vals-boxpl-bb.png>] [16 <./images/fitted-vals-boxpl-
+ww.png>]
+
+LaTeX Warning: Reference `fig:fitted-vals-boxpl-mix' on page 17 undefined on in
+put line 328.
+
+
+LaTeX Warning: Reference `table:fitted-vals-boxpl' on page 17 undefined on inpu
+t line 328.
+
+<./images/fitted-vals-boxpl-mix.png, id=119, 608.5134pt x 608.5134pt>
+File: ./images/fitted-vals-boxpl-mix.png Graphic file (type png)
+
+<use ./images/fitted-vals-boxpl-mix.png>
+Package pdftex.def Info: ./images/fitted-vals-boxpl-mix.png used on input line 
+331.
+(pdftex.def)             Requested size: 345.0pt x 344.9992pt.
+
+
+LaTeX Warning: Citation `lhc-higgs-width' on page 17 undefined on input line 33
+8.
+
+[17] [18 <./images/fitted-vals-boxpl-mix.png>]
+<./images/lum-needed-total-raw.png, id=128, 496.4949pt x 401.8212pt>
+File: ./images/lum-needed-total-raw.png Graphic file (type png)
+
+<use ./images/lum-needed-total-raw.png>
+Package pdftex.def Info: ./images/lum-needed-total-raw.png used on input line 3
+56.
+(pdftex.def)             Requested size: 345.0pt x 279.22505pt.
+
+
+LaTeX Warning: Reference `fig:lum-needed-total-raw' on page 19 undefined on inp
+ut line 360.
+
+
+LaTeX Warning: Reference `fig:lum-needed-total-cut' on page 19 undefined on inp
+ut line 360.
+
+
+LaTeX Warning: Reference `table:lum-needed' on page 19 undefined on input line 
+360.
+
+
+LaTeX Warning: Reference `sec:lum-needed' on page 19 undefined on input line 36
+0.
+
+[19 <./images/lum-needed-total-raw.png>]
+<./images/lum-needed-total-cut.png, id=134, 511.6716pt x 392.4261pt>
+File: ./images/lum-needed-total-cut.png Graphic file (type png)
+
+<use ./images/lum-needed-total-cut.png>
+Package pdftex.def Info: ./images/lum-needed-total-cut.png used on input line 3
+63.
+(pdftex.def)             Requested size: 345.0pt x 264.60074pt.
+
+
+LaTeX Warning: Reference `fig:lum-needed-bbar-raw' on page 20 undefined on inpu
+t line 367.
+
+
+LaTeX Warning: Reference `fig:lum-needed-bbar-cut' on page 20 undefined on inpu
+t line 367.
+
+
+LaTeX Warning: Reference `fig:lum-needed-ww-cut' on page 20 undefined on input 
+line 369.
+
+<./images/lum-needed-ww-bb.png, id=135, 518.8986pt x 398.9304pt>
+File: ./images/lum-needed-ww-bb.png Graphic file (type png)
+
+<use ./images/lum-needed-ww-bb.png>
+Package pdftex.def Info: ./images/lum-needed-ww-bb.png used on input line 374.
+(pdftex.def)             Requested size: 345.0pt x 265.24277pt.
+
+
+LaTeX Warning: Reference `fig:lum-needed-ww-bb' on page 20 undefined on input l
+ine 378.
+
+[20 <./images/lum-needed-total-cut.png>] [21 <./images/lum-needed-ww-bb.png>]
+[22]
+Overfull \hbox (4.3062pt too wide) in paragraph at lines 415--416
+[]\OT1/cmr/m/n/10 Machine-induced back-grounds, mainly from muon de-cays in the
+ beam, present
+ []
+
+<./images/data-fit-bbbar-raw.png, id=147, 578.16pt x 433.62pt>
+File: ./images/data-fit-bbbar-raw.png Graphic file (type png)
+
+<use ./images/data-fit-bbbar-raw.png>
+Package pdftex.def Info: ./images/data-fit-bbbar-raw.png used on input line 426
+.
+(pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
+ [23]
+<./images/data-fit-ww-raw.png, id=151, 578.16pt x 433.62pt>
+File: ./images/data-fit-ww-raw.png Graphic file (type png)
+
+<use ./images/data-fit-ww-raw.png>
+Package pdftex.def Info: ./images/data-fit-ww-raw.png used on input line 432.
+(pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
+ [24 <./images/data-fit-bbbar-raw.png>]
+<./images/data-fit-ww-cut.png, id=156, 578.16pt x 433.62pt>
+File: ./images/data-fit-ww-cut.png Graphic file (type png)
+
+<use ./images/data-fit-ww-cut.png>
+Package pdftex.def Info: ./images/data-fit-ww-cut.png used on input line 438.
+(pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
+
+<./images/data-fit-tt-raw.png, id=157, 578.16pt x 433.62pt>
+File: ./images/data-fit-tt-raw.png Graphic file (type png)
+
+<use ./images/data-fit-tt-raw.png>
+Package pdftex.def Info: ./images/data-fit-tt-raw.png used on input line 444.
+(pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
+ [25 <./images/data-fit-ww-raw.png> <./images/data-fit-ww-cut.png>]
+<./images/data-fit-tt-cut.png, id=164, 578.16pt x 433.62pt>
+File: ./images/data-fit-tt-cut.png Graphic file (type png)
+
+<use ./images/data-fit-tt-cut.png>
+Package pdftex.def Info: ./images/data-fit-tt-cut.png used on input line 450.
+(pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
+
+<./images/data-fit-gg-cut.png, id=165, 578.16pt x 433.62pt>
+File: ./images/data-fit-gg-cut.png Graphic file (type png)
+
+<use ./images/data-fit-gg-cut.png>
+Package pdftex.def Info: ./images/data-fit-gg-cut.png used on input line 456.
+(pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
+ [26 <./images/data-fit-tt-raw.png> <./images/data-fit-tt-cut.png>]
+<./images/lum-needed-bbar-raw.png, id=171, 502.9992pt x 406.1574pt>
+File: ./images/lum-needed-bbar-raw.png Graphic file (type png)
+
+<use ./images/lum-needed-bbar-raw.png>
+Package pdftex.def Info: ./images/lum-needed-bbar-raw.png used on input line 46
+5.
+(pdftex.def)             Requested size: 276.00105pt x 222.87286pt.
+
+<./images/lum-needed-bbar-cut.png, id=172, 521.7894pt x 411.939pt>
+File: ./images/lum-needed-bbar-cut.png Graphic file (type png)
+
+<use ./images/lum-needed-bbar-cut.png>
+Package pdftex.def Info: ./images/lum-needed-bbar-cut.png used on input line 47
+0.
+(pdftex.def)             Requested size: 276.00105pt x 217.8929pt.
+ [27 <./images/data-fit-gg-cut.png> <./images/lum-needed-bbar-raw.png>]
+<./images/lum-needed-ww-cut.png, id=178, 499.3857pt x 412.6617pt>
+File: ./images/lum-needed-ww-cut.png Graphic file (type png)
+
+<use ./images/lum-needed-ww-cut.png>
+Package pdftex.def Info: ./images/lum-needed-ww-cut.png used on input line 475.
+
+(pdftex.def)             Requested size: 276.00105pt x 228.07285pt.
+ [28 <./images/lum-needed-bbar-cut.png> <./images/lum-needed-ww-cut.png>]
+<./images/h-bbbar.png, id=184, 1271.75125pt x 731.73375pt>
+File: ./images/h-bbbar.png Graphic file (type png)
+
+<use ./images/h-bbbar.png>
+Package pdftex.def Info: ./images/h-bbbar.png used on input line 484.
+(pdftex.def)             Requested size: 345.0pt x 198.50864pt.
+
+<./images/h-bbbar-vtex3.png, id=185, 1271.75125pt x 731.73375pt>
+File: ./images/h-bbbar-vtex3.png Graphic file (type png)
+
+<use ./images/h-bbbar-vtex3.png>
+Package pdftex.def Info: ./images/h-bbbar-vtex3.png used on input line 489.
+(pdftex.def)             Requested size: 345.0pt x 198.50864pt.
+
+<./images/h-ww-e-tau-nunu.png, id=186, 1209.51875pt x 634.37pt>
+File: ./images/h-ww-e-tau-nunu.png Graphic file (type png)
+
+<use ./images/h-ww-e-tau-nunu.png>
+Package pdftex.def Info: ./images/h-ww-e-tau-nunu.png used on input line 494.
+(pdftex.def)             Requested size: 345.0pt x 180.94252pt.
+
+<./images/h-tautau2.png, id=187, 1271.75125pt x 731.73375pt>
+File: ./images/h-tautau2.png Graphic file (type png)
+
+<use ./images/h-tautau2.png>
+Package pdftex.def Info: ./images/h-tautau2.png used on input line 499.
+(pdftex.def)             Requested size: 345.0pt x 198.50864pt.
+ (./report.bbl [29 <./images/h-bbbar.png>] [30 <./images/h-bbbar-vtex3.png> <./
+images/h-ww-e-tau-nunu.png>]) [31 <./images/h-tautau2.png>] (./report.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3985 strings out of 493488
+ 62550 string characters out of 3146892
+ 132892 words of memory out of 3000000
+ 7216 multiletter control sequences out of 15000+200000
+ 10814 words of font info for 39 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 38i,12n,38p,1346b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (31 pages, 1642485 bytes).
+PDF statistics:
+ 275 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+
